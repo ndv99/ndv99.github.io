@@ -7,3 +7,22 @@ html, body, div, span, applet, h1, h2, h3, h4, h5, h6, p,{
 	border: 0;
 	font-size: 100%;
 }
+
+/* COLOURS */
+:root{
+  --main-colour: #FF0000;
+  --secondary-colour: #870808;
+  --mono-dark: #443737;
+  --mono-light: #DDD0D0;
+  --bg-colour: #FFFFFF;
+}
+
+/* DEFAULT FONTS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sintony', sans-serif;
+}
+
+p, ul, ol, li, blockquote {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+}
