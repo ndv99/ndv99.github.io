@@ -26,3 +26,26 @@ p, ul, ol, li, blockquote {
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
 }
+
+/* CLASS-SPECIFIC STYLING */
+.header{
+  background-color: var(--main-colour);
+  color: white;
+}
+
+.title{
+  font-size: 45px;
+  padding: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.menu{
+  font-size: 10px;
+	margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  background-color: var(--secondary-colour);
+  color: white;
+	text-align: center;
+}
