@@ -53,10 +53,10 @@ p, ul, ol, li, blockquote {
 }
 
 .menu-item{
-	border-width: medium;
+	/* border-width: medium;
 	border-left: 4px;
-	border-color: white;
-	font-size: 8px;
+	border-color: white; */
+	font-size: 12px;
 	text-transform: uppercase;
 }
 
