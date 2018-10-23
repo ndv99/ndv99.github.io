@@ -48,7 +48,7 @@ p, ul, ol, li, blockquote {
   padding: 0;
   background-color: var(--secondary-colour);
   color: white;
-	text-align: left;
+	text-align: center;
 	padding-left: 24px;
 }
 
