@@ -50,5 +50,5 @@ p, ul, ol, li, blockquote {
 }
 
 .grid-container{
-  max-width: 2000px;
+  max-width: 100%;
 }
