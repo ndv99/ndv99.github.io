@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
-  margin-top: 15%;
   align-items: center;
 }
 
 .card{
-  margin:1%;
-  width: 18%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
   padding: 0;
   border-radius: 15px 0px 15px 0px;
   background-color: var(--mono-light);
@@ -24,4 +24,8 @@
 
 .card-content{
   padding: 2%;
+}
+
+#card4{
+  margin-top: 10%
 }
