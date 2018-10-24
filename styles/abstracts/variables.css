@@ -1,10 +1,9 @@
 /* COLOURS AND VARS*/
 :root{
   --main-colour: #DD0000;
-  --secondary-colour: #870808;
-  --mono-dark: #443737;
-  --dark-maybe: #253751;
-  --mono-light: #DDD0D0;
+  --secondary-colour: #630505;
+  --mono-dark: #253751;
+  --mono-light: #C0C0D0;
   --bg-colour: #FFFFFF;
 	/* I know these two are literally black and white but I don't know if future-me
 	wants to change the text colours, so I've made it easier for him. Same with
