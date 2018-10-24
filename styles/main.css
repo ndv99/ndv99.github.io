@@ -32,11 +32,12 @@ body{
 /* DEFAULT FONTS */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Sintony', sans-serif;
+	color: var(--text-one);
 }
 
 p, a, ul, ol, li, blockquote {
   font-family: 'Roboto Condensed', sans-serif;
-  color: black;
+  color: var(--text-one);
 }
 
 /* TAG-SPECIFIC STYLING */
@@ -48,7 +49,6 @@ p, a, ul, ol, li, blockquote {
 
 .header{
   background-color: var(--main-colour);
-  color: var(--text-two);
 	padding: 0;
 }
 
@@ -56,6 +56,7 @@ p, a, ul, ol, li, blockquote {
   font-size: 45px;
   padding: 20px;
 	margin: 0;
+	color: var(--text-two);
 }
 
 .menu{
@@ -124,4 +125,10 @@ a.active{
 #contact {
 	border-right: 2px solid;
 	border-right-color: var(--text-two);
+}
+
+#header-and-menu{
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
