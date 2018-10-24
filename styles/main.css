@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Sintony:700');
 
 /* CSS RESET */
-html, body, div, span, applet, h1, h2, h3, h4, h5, h6, p,{
+html, body, div, span, applet, h1, h2, h3, h4, h5, h6, p, a{
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
+	text-decoration: none;
 	font-size: 100%;
 }
 
 /* COLOURS */
 :root{
-  --main-colour: #FF0000;
+  --main-colour: #FA0000;
   --secondary-colour: #870808;
   --mono-dark: #443737;
   --mono-light: #DDD0D0;
   --bg-colour: #FFFFFF;
+	/* I know these two are literally black and white but I don't know if future-me
+	wants to change the text colours, so I've made it easier for him. Same with
+	--bg-colour. */
+	--text-one: #000000;
+	--text-two: #FFFFFF;
 }
 
 body{
@@ -26,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Sintony', sans-serif;
 }
 
-p, ul, ol, li, blockquote {
+p, a, ul, ol, li, blockquote {
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
 }
@@ -34,7 +40,8 @@ p, ul, ol, li, blockquote {
 /* CLASS-SPECIFIC STYLING */
 .header{
   background-color: var(--main-colour);
-  color: white;
+  color: var(--text-two);
+	padding: 0;
 }
 
 .title{
@@ -47,19 +54,61 @@ p, ul, ol, li, blockquote {
 	margin: 0;
   padding: 0;
   background-color: var(--secondary-colour);
-  color: white;
-	text-align: center;
-	padding-left: 24px;
 }
 
-.menu-item{
-	/* border-width: medium;
-	border-left: 4px;
-	border-color: white; */
-	font-size: 12px;
+.menu-box{ /* for the grid boxes from unsemantic */
+	margin: 0;
+	padding: 0;
+}
+
+.menu-item{ /* for the content of each box */
+	margin: 0;
+	padding: 0;
+	padding-left: 5px;
+	display: block;
+	
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-left: 2px solid;
+	border-left-color: var(--text-two);
+	border-top-color: var(--secondary-colour);
+	border-bottom-color: var(--secondary-colour);
+
+  color: var(--text-two);
+	text-align: left;
+	font-size: 20px;
 	text-transform: uppercase;
 }
 
-.grid-container{
+a.menu-item:link{ /* I hate underlines in my button links */
+	text-decoration: none;
+}
+
+a.menu-item:hover{ /* Makes the menu item the same colour as the header */
+	background-color: var(--main-colour);
+	border-top-color: var(--main-colour);
+	border-bottom-color: var(--main-colour);
+}
+
+.grid-container{ /* Grid container always fills screen */
   max-width: 100%;
 }
+
+.active{
+	background-color: var(--main-colour);
+	border-top-color: var(--main-colour);
+	border-bottom-color: var(--main-colour);
+}
+
+/* ITEM-SPECIFIC STYLING */
+
+#home {
+	margin-left: 2px;
+}
+
+#contact {
+	border-right: 2px solid;
+	border-right-color: var(--text-two);
+}
+
+/* TAG-SPECIFIC STYLING */
