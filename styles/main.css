@@ -9,9 +9,9 @@ html, body, div, span, applet, h1, h2, h3, h4, h5, h6, p, a{
 	font-size: 100%;
 }
 
-/* COLOURS */
+/* COLOURS AND VARS*/
 :root{
-  --main-colour: #FA0000;
+  --main-colour: #DD0000;
   --secondary-colour: #870808;
   --mono-dark: #443737;
   --mono-light: #DDD0D0;
@@ -21,6 +21,8 @@ html, body, div, span, applet, h1, h2, h3, h4, h5, h6, p, a{
 	--bg-colour. */
 	--text-one: #000000;
 	--text-two: #FFFFFF;
+
+	--transition: background-color 100ms linear;
 }
 
 body{
@@ -40,6 +42,10 @@ p, a, ul, ol, li, blockquote {
 /* TAG-SPECIFIC STYLING */
 
 /* CLASS-SPECIFIC STYLING */
+.grid-container{ /* Grid container always fills screen */
+  max-width: 100%;
+}
+
 .header{
   background-color: var(--main-colour);
   color: var(--text-two);
@@ -76,27 +82,34 @@ p, a, ul, ol, li, blockquote {
 	border-top-color: var(--secondary-colour);
 	border-bottom-color: var(--secondary-colour);
 
-  color: var(--text-two);
+	color: var(--text-two);
 	text-align: left;
 	font-size: 20px;
 	text-transform: uppercase;
 }
 
-a.menu-item:link{ /* I hate underlines in my button links */
+a.menu-item{ /* I hate underlines in my button links */
 	text-decoration: none;
+	background-color: var(--secondary-colour);
+	-webkit-transition: var(--transition);
+	-moz-transition: var(--transition);
+	-ms-transition: var(--transition);
+	-o-transition: var(--transition);
+	transition: var(--transition);
 }
 
 a.menu-item:hover{ /* Makes the menu item the same colour as the header */
 	background-color: var(--main-colour);
 	border-top-color: var(--main-colour);
 	border-bottom-color: var(--main-colour);
+	-webkit-transition: var(--transition);
+	-moz-transition: var(--transition);
+	-ms-transition: var(--transition);
+	-o-transition: var(--transition);
+	transition: var(--transition);
 }
 
-.grid-container{ /* Grid container always fills screen */
-  max-width: 100%;
-}
-
-.active{
+a.active{
 	background-color: var(--main-colour);
 	border-top-color: var(--main-colour);
 	border-bottom-color: var(--main-colour);
