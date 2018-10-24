@@ -1,6 +1,7 @@
 body{
-  background-image: url("https://imgur.com/a/caBuq80");
+  background-image: url("home-background.JPG");
   background-color: var(--bg-colour);
-  background-position: center;
+  background-position: center top;
   background-size: cover;
+  background-repeat: no-repeat;
 }
