@@ -1,21 +1,26 @@
 .cards{
-	padding: 0;
-	margin-top: 10%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  margin-top: 10%;
 }
 
 .card{
-
+  margin:1%;
+  width: 18%;
+  padding: 0;
+  border-radius: 15px 0px 15px 0px;
+  background-color: var(--mono-light);
 }
 
-#card1{
-	margin-left: 10%;
+.card-heading{
+  color: var(--text-two);
+  padding: 2%;
+  background-color: var(--mono-dark);
+  border-radius: 15px 0px 0px 0px;
+  border-color: var(--mono-dark);
 }
 
-#card2{
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-#card3{
-	margin-right: 10%
+.card-content{
+  padding: 2%;
 }

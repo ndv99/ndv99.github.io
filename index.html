@@ -11,13 +11,20 @@
 
     <!-- style and framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+
+    <!-- Base/ -->
     <link rel="stylesheet" href="styles/base/reset.css"> <!-- CSS reset-->
-    <link rel="stylesheet" href="styles/abstracts/variables.css"> <!-- variables -->
     <link rel="stylesheet" href="styles/base/typography.css"> <!-- typography -->
     <link rel="stylesheet" href="styles/base/global.css"> <!-- globals -->
-    <link rel="stylesheet" href="styles/layout/header-and-nav.css"> <!-- header and navbar -->
+
+    <!-- Components/ -->
     <link rel="stylesheet" href="styles/components/cards.css"> <!-- cards -->
-    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Layout/ -->
+    <link rel="stylesheet" href="styles/layout/header-and-nav.css"> <!-- header and navbar -->
+
+    <!-- Abstracts/ -->
+    <link rel="stylesheet" href="styles/abstracts/variables.css"> <!-- variables -->
 
     <title>Home | Nick De Villiers</title>
   </head>
@@ -32,19 +39,19 @@
 
       <!-- menu bar -->
       <div class="grid-container menu">
-        <section class="grid-10 active menu-box" id="home">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 active menu-box" id="home">
           <a class="menu-item active" href="index.html">Home</a>
         </section>
-        <section class="grid-10 menu-box" id="about">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="about">
           <a class="menu-item" href="about.html">About Me</a>
         </section>
-        <section class="grid-10 menu-box" id="projects">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="projects">
           <a class="menu-item" href="projects.html">Projects</a>
         </section>
-        <section class="grid-10 menu-box" id="cv">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="cv">
           <a class="menu-item" href="cv.html">My CV</a>
         </section>
-        <section class="grid-10 menu-box" id="contact">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="contact">
           <a class="menu-item" href="contact.html">Contact Me</a>
         </section>
       </div>
@@ -53,16 +60,24 @@
 
     <div class="grid-container cards">
       <section class="grid-20 card" id="card1">
-        <h2>heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="card-heading">heading</h2>
+        <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
       <section class="grid-20 card" id="card2">
-        <h2>heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="card-heading">heading</h2>
+        <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
       <section class="grid-20 card" id="card3">
-        <h2>heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="card-heading">heading</h2>
+        <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section class="grid-20 card" id="card4">
+        <h2 class="card-heading">heading</h2>
+        <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section class="grid-20 card" id="card5">
+        <h2 class="card-heading">heading</h2>
+        <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
     </div>
 
