@@ -37,6 +37,8 @@ p, a, ul, ol, li, blockquote {
   color: black;
 }
 
+/* TAG-SPECIFIC STYLING */
+
 /* CLASS-SPECIFIC STYLING */
 .header{
   background-color: var(--main-colour);
@@ -66,7 +68,7 @@ p, a, ul, ol, li, blockquote {
 	padding: 0;
 	padding-left: 5px;
 	display: block;
-	
+
 	border-top: 3px solid;
 	border-bottom: 3px solid;
 	border-left: 2px solid;
@@ -110,5 +112,3 @@ a.menu-item:hover{ /* Makes the menu item the same colour as the header */
 	border-right: 2px solid;
 	border-right-color: var(--text-two);
 }
-
-/* TAG-SPECIFIC STYLING */
