@@ -1,9 +1,5 @@
 /* CLASS-SPECIFIC STYLING */
 
-.grid-container{ /* Grid container always fills screen */
-  /* max-width: 100%; */
-}
-
 .header{
   background-image: linear-gradient(#990000, var(--main-colour));
   background-color: var(--main-colour);

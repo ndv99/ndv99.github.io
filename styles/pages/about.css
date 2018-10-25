@@ -1,0 +1,7 @@
+body{
+  background-image: url("https://picsum.photos/4000/4000");
+  background-color: var(--bg-colour);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
