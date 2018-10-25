@@ -1,0 +1,31 @@
+.cards{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  align-items: center;
+}
+
+.card{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  padding: 0;
+  border-radius: 15px 0px 15px 0px;
+  background-color: var(--mono-light);
+}
+
+.card-heading{
+  color: var(--text-two);
+  padding: 2%;
+  background-color: var(--mono-dark);
+  border-radius: 15px 0px 0px 0px;
+  border-color: var(--mono-dark);
+}
+
+.card-content{
+  padding: 2%;
+}
+
+.card-img{
+  width: 100%;
+}

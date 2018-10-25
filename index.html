@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- metadata -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width,
                    initial-scale=1,
                    minimum-scale=1,
                    maximum-scale=1"/>
+
+    <!-- style and framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Base/ -->
+    <link rel="stylesheet" href="styles/base/reset.css"> <!-- CSS reset-->
+    <link rel="stylesheet" href="styles/base/typography.css"> <!-- typography -->
+    <link rel="stylesheet" href="styles/base/globals.css"> <!-- globals -->
+
+    <!-- Components/ -->
+    <link rel="stylesheet" href="styles/components/cards.css"> <!-- cards -->
+
+    <!-- Layout/ -->
+    <link rel="stylesheet" href="styles/layout/header-and-nav.css"> <!-- header and navbar -->
+
+    <!-- Pages -->
+    <link rel="stylesheet" href="styles/pages/home.css"> <!-- CSS for homepage-specific stuff -->
+
+    <!-- Abstracts/ -->
+    <link rel="stylesheet" href="styles/abstracts/variables.css"> <!-- variables -->
+
     <title>Home | Nick De Villiers</title>
   </head>
   <body>
@@ -16,28 +36,72 @@
     <div id="header-and-menu">
 
       <!-- header -->
-      <header class="grid-container grid-100 header">
+      <header class="grid-container header">
         <h1 class="title">Nick De Villiers</h1>
       </header>
 
       <!-- menu bar -->
-      <div class="grid-container grid-100 menu">
-        <section class="grid-10 active menu-box" id="home">
+      <div class="grid-container menu">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 active menu-box" id="home">
           <a class="menu-item active" href="index.html">Home</a>
         </section>
-        <section class="grid-10 menu-box" id="about">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="about">
           <a class="menu-item" href="about.html">About Me</a>
         </section>
-        <section class="grid-10 menu-box" id="projects">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="projects">
           <a class="menu-item" href="projects.html">Projects</a>
         </section>
-        <section class="grid-10 menu-box" id="cv">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="cv">
           <a class="menu-item" href="cv.html">My CV</a>
         </section>
-        <section class="grid-10 menu-box" id="contact">
+        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="contact">
           <a class="menu-item" href="contact.html">Contact Me</a>
         </section>
       </div>
+
     </div>
+
+    <div class="grid-container cards" id="top-cards">
+      <section class="grid-15 push-10 card" id="card1">
+        <h2 class="card-heading">Projects</h2>
+        <p class="card-content">
+          <img src="images/ferrari.JPG" alt="A row of Ferraris" class="card-img">
+          When Ferrari founder Enzo Ferrari was asked which Ferrari was his favourite, he would always reply "the next one." <strong>A philosophy I stand by with my projects.</strong>
+        </p>
+      </section>
+      <section class="grid-15 push-40 card" id="card2">
+        <h2 class="card-heading">Keep on learning</h2>
+        <p class="card-content">
+          <img src="images/maths.JPG" alt="Notes" class="card-img">
+          No-one can ever know everything about writing programs and building software solutions. <strong>That's why I never stop learning and improving my skills.</strong>
+        </p>
+      </section>
+    </div>
+    <div class="grid-container cards" id="bottom-cards">
+      <section class="grid-15 card" id="card3">
+        <h2 class="card-heading">My style</h2>
+        <p class="card-content">
+          <img src="images/code.JPG" alt="HTML Code" class="card-img">
+          My code is written and tested meticulously. If there is a bug, you can guarentee I'll find it. <strong>If it's not done right, it's not worth doing.</strong>
+        </p>
+      </section>
+      <section class="grid-20 push-10 card" id="card4">
+        <h2 class="card-heading">Creative Solutions</h2>
+        <p class="card-content">
+          <img src="images/sunset.JPG" alt="A sunset" class="card-img">
+          Some say software engineering is all maths. I argue otherwise; you need a lot of creativity to do this. <strong>With this mindset, I've never let a problem stop me in my work.</strong>
+        </p>
+      </section>
+      <section class="grid-15 push-20 card" id="card5">
+        <h2 class="card-heading">Cut to the chase</h2>
+        <p class="card-content">
+          <img src="images/crane.JPG" alt="A crane" class="card-img">
+          I never like wasting people's time. I'm never vague when talking with clients. <strong>My goal is to build what you want, how you want it.</strong> </p>
+      </section>
+    </div>
+
+    <footer class="grid-container footer">
+    </footer>
+
   </body>
 </html>

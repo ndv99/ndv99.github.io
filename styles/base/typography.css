@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Sintony:700');
+
+/* DEFAULT FONTS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sintony', sans-serif;
+	color: var(--text-one);
+}
+
+p, a, ul, ol, li, blockquote {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--text-one);
+}
+
+p{
+  font-size: 18px;
+}
