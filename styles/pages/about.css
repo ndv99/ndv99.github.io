@@ -1,7 +1,12 @@
 body{
+  /* placeholder image until I decide what I want */
   background-image: url("https://picsum.photos/4000/4000");
+  /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
+
+  /* positioning: top edge of image touches top edge of page, image covers background, image does not repeat, image does not move on scrolling */
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }

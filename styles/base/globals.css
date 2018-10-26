@@ -1,3 +1,4 @@
 body{
-	/* background-color: var(--bg-colour); */
+	background-color: var(--bg-colour);
+  /* default background colour */
 }

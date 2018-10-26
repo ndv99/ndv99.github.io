@@ -1,10 +1,12 @@
 .cards{
+  /* cards container spans page */
   margin: 0;
   padding: 0;
   max-width: 100%;
 }
 
 .card{
+  /* each card has: slight margin, no bottom margin,  no padding, cool border, light background, and a drop shadow */
   margin: 5%;
   margin-bottom: 0;
   padding: 0;
@@ -14,6 +16,7 @@
 }
 
 .card-heading{
+  /* card heading is dark to contrast with card body. slight padding, white text, and border to match card. */
   color: var(--text-two);
   padding: 2%;
   background-color: var(--mono-dark);
@@ -22,9 +25,11 @@
 }
 
 .card-content{
+  /* padding so content doesn't touch border. */
   padding: 2%;
 }
 
 .card-img{
+  /* images in cards span the width of the card - no less, no more. */
   width: 100%;
 }
