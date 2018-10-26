@@ -1,6 +1,8 @@
 
 .header{
+  /* Nice gradient for title bar */
   background-image: linear-gradient(#990000, var(--main-colour));
+  /* Fallback colour in case gradient doesn't work */
   background-color: var(--main-colour);
 	padding: 0;
   max-width: 100%;
@@ -9,12 +11,13 @@
 
 .title{
   font-size: 45px;
-  padding: 20px;
+  padding: 20px; /* padding so title text isn't touching left page border */
 	margin: 0;
 	color: var(--text-two);
 }
 
 .mobile-title-bar{
+  /* mobile title bar is persistent, and content goes underneath when scrolling. */
   position: fixed;
   top: 0;
   z-index: 1;
@@ -47,12 +50,14 @@
 
 	color: var(--text-two);
 	text-align: left;
-	font-size: 20px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 
-a.menu-item{ /* I hate underlines in my button links */
+a.menu-item{
+  /* I hate underlines in my button links */
 	text-decoration: none;
+  /* transition back to secondary colour when mouse isn't hovering over */
 	background-color: var(--secondary-colour);
 	-webkit-transition: var(--transition);
 	-moz-transition: var(--transition);
@@ -61,7 +66,8 @@ a.menu-item{ /* I hate underlines in my button links */
 	transition: var(--transition);
 }
 
-a.menu-item:hover{ /* Makes the menu item the same colour as the header */
+a.menu-item:hover{
+  /* Makes the menu item the same colour as the header upon hover.*/
 	background-color: var(--main-colour);
 	border-top-color: var(--main-colour);
 	border-bottom-color: var(--main-colour);
@@ -73,21 +79,25 @@ a.menu-item:hover{ /* Makes the menu item the same colour as the header */
 }
 
 a.active{
+  /* active link matches title bar colour */
 	background-color: var(--main-colour);
 	border-top-color: var(--main-colour);
 	border-bottom-color: var(--main-colour);
 }
 
 #home {
+  /* gives a tiny bit of separation from the left side of the page. */
 	margin-left: 2px;
 }
 
 #contact {
+  /* makes sure theer's a border on both side of the contact button so it looks like the others and doesn't feel left out. */
 	border-right: 2px solid;
 	border-right-color: var(--text-two);
 }
 
 #header-and-menu{
+  /* header and menu span across page, position is persistent. When you scroll, everything goes under it. */
 	position: fixed;
 	top: 0;
   z-index: 1;
@@ -95,18 +105,22 @@ a.active{
 }
 
 #mobile-header{
+  /* mobile header spans across page */
   top: 0;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-@media screen and (max-width: 797px){
+/* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
+@media screen and (max-width: 767px){
   .header{
+    /* slimmer header */
     height: 43px;
   }
 
   .title{
+    /* smaller title */
     padding: 5px;
     font-size: 25px;
     margin: 0;
@@ -114,10 +128,8 @@ a.active{
   }
 
   .menu{
+    /* menu top margin is the same as the width of the header. */
     margin-top: 43px;
   }
 
-  a.active{
-    display: block;
-  }
 }

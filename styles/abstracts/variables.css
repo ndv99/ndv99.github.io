@@ -1,15 +1,18 @@
 /* COLOURS AND VARS*/
 :root{
-  --main-colour: #CC0F0F;
-  --secondary-colour: #630505;
-  --mono-dark: #512525;
-  --mono-light: #F0F0F0;
-  --bg-colour: #FFFFFF;
+  /* Thanks to coolors.co for the help! */
+  --main-colour: #CC0F0F; /* "Venetian red" - red, but toned down some. */
+  --secondary-colour: #630505; /* "Rosewood" - deeper red */
+  --mono-dark: #512525; /* "Caput mortuum" - like a red-ish brown sorta colour */
+  --mono-light: #F0F0F0; /* "Isabelline" - not quite white */
+  --bg-colour: #FFFFFF; /* "White" - white */
+
 	/* I know these two are literally black and white but I don't know if future-me
 	wants to change the text colours, so I've made it easier for him. Same with
 	--bg-colour. */
 	--text-one: #000000;
 	--text-two: #FFFFFF;
 
+  /* transition variable to change background colour when you hover over menu items. 150ms linear makes it quick and a constant speed.*/
 	--transition: background-color 150ms linear;
 }

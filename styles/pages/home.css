@@ -1,6 +1,10 @@
 body{
+  /* kinda edgy background image of me that I wanted to change but everyone said to keep cos it looks cool so I guess I will */
   background-image: url("home-background.JPG");
+  /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
+
+  /* positioning: top edge of image touches top edge of page, image covers background, image does not repeat, image does not move on scrolling */
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,19 +12,24 @@ body{
 }
 
 #card4{
+  /* card 4 is moved down slightly because that looks nicer. */
   margin-top: 10%
 }
 
 #top-cards{
-  margin-top: 5%;
+  /* top cards don't fall behind header when scrolled to top */
+  margin-top: 127px;
 }
 
 #bottom-cards{
+  /* bottom cards don't touch bottom of page. */
   margin-bottom: 2%
 }
 
+/* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
 @media screen and (max-width: 767px) {
   #card4{
+    /* card 4 "Creative Solutions" has no weird margin above it when viewed on mobile.*/
     margin-top: 5%;
   }
 
