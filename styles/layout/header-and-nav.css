@@ -47,7 +47,7 @@
 
 	color: var(--text-two);
 	text-align: left;
-	font-size: 20px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 
@@ -101,7 +101,7 @@ a.active{
   width: 100%;
 }
 
-@media screen and (max-width: 797px){
+@media screen and (max-width: 767px){
   .header{
     height: 43px;
   }
