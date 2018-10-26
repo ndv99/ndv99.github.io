@@ -14,3 +14,17 @@ body{
 #top-cards{
   margin-top: 5%;
 }
+
+#bottom-cards{
+  margin-bottom: 2%
+}
+
+@media screen and (max-width: 767px) {
+  #card4{
+    margin-top: 5%;
+  }
+
+  #top-cards{
+    margin-top: 0;
+  }
+}
