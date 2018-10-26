@@ -9,8 +9,9 @@
                    minimum-scale=1,
                    maximum-scale=1"/>
 
-    <!-- style and framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <!-- External styles/frameworks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css"> <!-- unsemantic -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- font awesome icons -->
 
     <!-- Base/ -->
     <link rel="stylesheet" href="styles/base/reset.css"> <!-- CSS reset-->
@@ -32,32 +33,55 @@
 
     <title>Home | Nick De Villiers</title>
   </head>
+
   <body>
 
-    <div id="header-and-menu">
+    <!-- DESKTOP/TABLET HEADER -->
+    <div class="hide-on-mobile" id="header-and-menu">
 
-      <!-- header -->
+      <!-- title bar -->
       <header class="grid-container header">
         <h1 class="title">Nick De Villiers</h1>
       </header>
 
       <!-- menu bar -->
       <div class="grid-container menu">
-        <section class="grid-10 tablet-grid-100 mobile-grid-100 active menu-box" id="home">
+        <section class="grid-10 tablet-grid-100 active menu-box" id="home">
           <a class="menu-item active" href="index.html">Home</a>
         </section>
-        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="about">
+        <section class="grid-10 tablet-grid-100 menu-box" id="about">
           <a class="menu-item" href="about.html">About Me</a>
         </section>
-        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="projects">
+        <section class="grid-10 tablet-grid-100 menu-box" id="projects">
           <a class="menu-item" href="projects.html">Projects</a>
         </section>
-        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="cv">
+        <section class="grid-10 tablet-grid-100 menu-box" id="cv">
           <a class="menu-item" href="cv.html">My CV</a>
         </section>
-        <section class="grid-10 tablet-grid-100 mobile-grid-100 menu-box" id="contact">
+        <section class="grid-10 tablet-grid-100 menu-box" id="contact">
           <a class="menu-item" href="contact.html">Contact Me</a>
         </section>
+      </div>
+
+    </div>
+
+    <!-- code for mobile menu partially from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+    <!-- MOBILE HEADER -->
+    <div class="hide-on-desktop" id="mobile-header">
+
+      <!-- title bar -->
+      <header class="header mobile-title-bar">
+        <h1 class="title">
+          NDV
+        </h1>
+      </header>
+
+      <div class="menu">
+        <a href="#index" class="active menu-item">Home</a>
+        <a href="#about" class="menu-item">About</a>
+        <a href="#projects" class="menu-item">Projects</a>
+        <a href="#cv" class="menu-item">My CV</a>
+        <a href="contact" class="menu-item">Contact Me</a>
       </div>
 
     </div>
