@@ -6,6 +6,11 @@
 
 	padding: 0;
   max-width: 100%;
+  width: 100%;
+
+  /* footer stays at bottom but is only visible when you scroll to the bottom */
+  position: relative;
+  top: 110px;
 }
 
 .social, ul.social > li, ul.social > li > a{
@@ -25,4 +30,5 @@ ul.social > li > a{
   /* Copyright is at bottom center. */
   text-align: center;
   color: var(--text-two);
+  font-size: 16px;
 }

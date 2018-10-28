@@ -26,14 +26,21 @@ body{
   margin-bottom: 2%
 }
 
+#card1, #card2{
+  margin-top: 28px;
+}
+
 /* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
 @media screen and (max-width: 767px) {
-  #card4{
-    /* card 4 "Creative Solutions" has no weird margin above it when viewed on mobile.*/
-    margin-top: 5%;
-  }
 
   #top-cards{
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #card4{
+    /* card 4 "Creative Solutions" has no weird margin above it when viewed on mobile.*/
+    margin-top: 5%;
   }
 }
