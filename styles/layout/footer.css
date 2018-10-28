@@ -10,7 +10,7 @@
 
   /* footer stays at bottom but is only visible when you scroll to the bottom */
   position: relative;
-  top: 110px;
+  top: 0;
 }
 
 .social, ul.social > li, ul.social > li > a{
