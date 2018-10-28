@@ -43,4 +43,8 @@ body{
     /* card 4 "Creative Solutions" has no weird margin above it when viewed on mobile.*/
     margin-top: 5%;
   }
+
+  #card5{
+    margin-bottom: 77px;
+  }
 }
