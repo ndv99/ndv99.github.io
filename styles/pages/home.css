@@ -38,12 +38,14 @@ body{
   }
 }
 
+/* This affects tablet and mobile. 1024px is used because at width: 1025px the screen is wide enough to show cards like in desktop arrangement, making these redundant (and possibly destructive) */
 @media screen and (max-width: 1024px) {
   #card4{
     /* card 4 "Creative Solutions" has no weird margin above it when viewed on mobile.*/
     margin-top: 5%;
   }
 
+  /* card5 "Cut to the chase" will avoid the footer; when you scroll to the bottom, card 5 moves up enough to not be covered by footer. */
   #card5{
     margin-bottom: 77px;
   }
