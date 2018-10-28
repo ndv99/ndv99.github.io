@@ -3,6 +3,13 @@
   background-image: linear-gradient(var(--main-colour), #990000);
   /* fallback colour in case gradient deons't work */
   background-color: var(--main-colour);
+
 	padding: 0;
   max-width: 100%;
+}
+
+.social, ul.social > li, ul.social > li > a{
+  /* Makes text color white for social media links */
+  color: var(--text-two);
+  line-height: 1;
 }
