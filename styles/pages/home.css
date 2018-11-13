@@ -22,8 +22,8 @@ body{
 }
 
 #bottom-cards{
-  /* bottom cards don't touch bottom of page. */
-  margin-bottom: 2%
+  /* bottom cards don't touch bottom of page and aren't hidden by footer. */
+  margin-bottom: 77px
 }
 
 #card1, #card2{
