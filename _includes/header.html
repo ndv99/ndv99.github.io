@@ -14,25 +14,12 @@
 
       <!-- menu bar -->
       <nav class="grid-container menu">
-        <section class='grid-10 tablet-grid-15 {% if title == "Home" %} active {% endif %} menu-box' id="home">
-          <a class='menu-item active' href="index.html">Home</a>
-        </section>
-        <section class='grid-10 tablet-grid-15 {% if title == "About Me" %} active {% endif %} menu-box' id="about">
-          <a class="menu-item" href="about.html">About Me</a>
-        </section>
-        <section class='grid-10 tablet-grid-15 {% if title == "Projects" %} active {% endif %} menu-box' id="projects">
-          <a class="menu-item" href="projects.html">Projects</a>
-        </section>
-        <section class='grid-10 tablet-grid-15 {% if title == "My CV" %} active {% endif %} menu-box' id="cv">
-          <a class="menu-item" href="cv.html">My CV</a>
-        </section>
-        <section class='grid-10 tablet-grid-15 {% if title == "Contact Me" %} active {% endif %} menu-box' id="contact">
-          <a class="menu-item" href="contact.html">Contact Me</a>
-        </section>
-      </nav>
-
-      <nav>
-        
+        {% assign pages = site.pages | sort: "order" %}
+        {% for item in pages %}
+          <section class="grid-10 tablet-grid-15 {% if page.url == item.url %} active {% endif %} menu-box" id="{{item.css}}">
+            <a class='menu-item {% if page.url == item.url %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
+          </section>
+        {% endfor %}
       </nav>
 
     </header>
@@ -48,13 +35,20 @@
         </h1>
       </div>
 
-      <nav class="menu">
+      <nav class="grid-container menu">
+        {% assign pages = site.pages | sort: "order" %}
+        {% for item in pages %}
+          <a class='menu-item {% if page.url == item.url %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
+        {% endfor %}
+      </nav>
+
+      <!-- <nav class="menu">
         <a href="index.html" class='{% if title == "Home" %} active {% endif %} menu-item'>Home</a>
         <a href="about.html" class='{% if title == "About Me" %} active {% endif %} menu-item'>About</a>
         <a href="projects.html" class='{% if title == "Projects" %} active {% endif %} menu-item'>Projects</a>
         <a href="cv.html" class='{% if title == "My CV" %} active {% endif %} menu-item'>My CV</a>
         <a href="contact.html" class='{% if title == "Contact Me" %} active {% endif %} menu-item'>Contact Me</a>
-      </nav>
+      </nav> -->
 
     </header>
   </body>
