@@ -16,9 +16,11 @@
       <nav class="grid-container menu">
         {% assign pages = site.pages | sort: "order" %}
         {% for item in pages %}
-          <section class="grid-10 tablet-grid-15 {% if page.url == item.url AND item.url != https://ndv99.github.io/assets/css/style.css %} active {% endif %} menu-box" id="{{item.css}}">
-            <a class='menu-item {% if page.url == item.url AND item.url != https://ndv99.github.io/assets/css/style.css %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
-          </section>
+          {% if item.type == "display" %}
+            <section class="grid-10 tablet-grid-15 {% if page.url == item.url %} active {% endif %} menu-box" id="{{item.css}}">
+              <a class='menu-item {% if page.url == item.url %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
+            </section>
+          {% endif %}
         {% endfor %}
       </nav>
 
