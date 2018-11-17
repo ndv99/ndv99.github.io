@@ -22,3 +22,9 @@ body{
 #mid-pb > .pb-img{
   float: right;
 }
+
+@media screen and (max-width: 767px) {
+  #top-pb{
+    margin-top: 0;
+  }
+}

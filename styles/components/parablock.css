@@ -1,3 +1,7 @@
+/* If you're looking at the source code for this, you're probably wondering what a parablock is.
+Well basically, if you look at this page when rendered, you'll see an image, next to a piece of text and a title. The text is just
+a paragraph, and the image, paragraph, and title are all put nicely together in a block. I had trouble coming up with a name for this
+structure, until I coined 'parablock' - a paragraph in a neat little block. It's a stupid name, I know, but at least it's a name. */
 .parablock{
   min-height: 300px;
   max-width: 100%;
