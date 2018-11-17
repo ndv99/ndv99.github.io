@@ -10,3 +10,34 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.parablock{
+  min-height: 300px;
+  max-width: 100%;
+  background-color: var(--mono-light);
+  display: block;
+}
+
+.pb-img{
+  float: left;
+}
+
+.pb-text{
+}
+
+.pb-heading{
+  color: var(--text-two);
+  background-color: var(--mono-dark-SEMI);
+}
+
+#top-pb{
+  margin-top: 142px;
+}
+
+#bot-pb{
+  margin-bottom: 77px;
+}
+
+#mid-pb > .pb-img{
+  float: right;
+}

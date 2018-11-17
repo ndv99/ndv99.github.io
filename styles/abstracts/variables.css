@@ -4,6 +4,7 @@
   --main-colour: #CC0F0F; /* "Venetian red" - red, but toned down some. */
   --secondary-colour: #630505; /* "Rosewood" - deeper red */
   --mono-dark: #512525; /* "Caput mortuum" - like a red-ish brown sorta colour */
+  --mono-dark-SEMI: rgba(81, 37, 37, 125); /* The above, except semi-transparent */
   --mono-light: #F0F0F0; /* "Isabelline" - not quite white */
   --bg-colour: #FFFFFF; /* "White" - white */
 

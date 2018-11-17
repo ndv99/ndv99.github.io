@@ -18,7 +18,9 @@
 .card-heading{
   /* card heading is dark to contrast with card body. slight padding, white text, and border to match card. */
   color: var(--text-two);
-  padding: 2%;
+  font-size: 20px;
+  padding: 1%;
+  padding-left: 2%;
   background-color: var(--mono-dark);
   border-radius: 15px 0px 0px 0px;
   border-color: var(--mono-dark);
