@@ -49,6 +49,7 @@
 	border-bottom-color: var(--secondary-colour);
 
 	color: var(--text-two);
+  font-weight: bold;
 	text-align: left;
 	font-size: 18px;
 	text-transform: uppercase;

@@ -1,6 +1,6 @@
 body{
-  /* picture of me looking over the Tay by the V&A, attempting to look cool and failing. */
-  background-image: url("about-background.JPG");
+  /* placeholder image until I decide what I want */
+  background-image: url("https://picsum.photos/4000/4000");
   /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
 
@@ -9,22 +9,4 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-#top-pb{
-  margin-top: 142px;
-}
-
-#bot-pb{
-  margin-bottom: 77px;
-}
-
-#mid-pb > .pb-img{
-  float: right;
-}
-
-@media screen and (max-width: 767px) {
-  #top-pb{
-    margin-top: 0;
-  }
 }
