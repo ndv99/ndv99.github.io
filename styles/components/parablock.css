@@ -1,0 +1,22 @@
+.parablock{
+  min-height: 300px;
+  max-width: 100%;
+  background-color: var(--mono-light-SEMI);
+  opacity: 50%;
+  display: block;
+}
+
+.pb-img{
+  float: left;
+  height: 300px;
+  width: 300px;
+}
+
+.pb-text{
+  color: var(--text-one);
+}
+
+.pb-heading{
+  color: var(--text-two);
+  background-color: var(--mono-dark-SEMI);
+}

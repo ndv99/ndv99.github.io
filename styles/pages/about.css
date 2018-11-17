@@ -1,6 +1,6 @@
 body{
-  /* placeholder image until I decide what I want */
-  background-image: url("https://picsum.photos/4000/4000");
+  /* picture of me looking over the Tay by the V&A, attempting to look cool and failing. */
+  background-image: url("about-background.JPG");
   /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
 
@@ -9,25 +9,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.parablock{
-  min-height: 300px;
-  max-width: 100%;
-  background-color: var(--mono-light);
-  display: block;
-}
-
-.pb-img{
-  float: left;
-}
-
-.pb-text{
-}
-
-.pb-heading{
-  color: var(--text-two);
-  background-color: var(--mono-dark-SEMI);
 }
 
 #top-pb{

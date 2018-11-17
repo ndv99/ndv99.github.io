@@ -4,8 +4,9 @@
   --main-colour: #CC0F0F; /* "Venetian red" - red, but toned down some. */
   --secondary-colour: #630505; /* "Rosewood" - deeper red */
   --mono-dark: #512525; /* "Caput mortuum" - like a red-ish brown sorta colour */
-  --mono-dark-SEMI: rgba(81, 37, 37, 125); /* The above, except semi-transparent */
+  --mono-dark-SEMI: rgba(81, 37, 37, 0.85); /* The above, except semi-transparent */
   --mono-light: #F0F0F0; /* "Isabelline" - not quite white */
+  --mono-light-SEMI: rgba(240, 240, 240, 0.7); /* The above, except semi-transparent */
   --bg-colour: #FFFFFF; /* "White" - white */
 
 	/* I know these two are literally black and white but I don't know if future-me
