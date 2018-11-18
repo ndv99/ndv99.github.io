@@ -20,6 +20,13 @@ body{
   margin-top: 15%;
 }
 
+/* Since you're reading the CSS, I'm gonna help you out. There is a ihidden link
+next to the title of the first card in the projects page. DO NOT CLICK IT. */
+#secret{
+  color: var(--mono-dark);
+  font-size: 8px;
+}
+
 /* This affects tablet and mobile. 1024px is used because at width: 1025px the screen is wide enough to show cards like in desktop arrangement, making these redundant (and possibly destructive) */
 @media screen and (max-width: 1024px) {
   .project-card{
