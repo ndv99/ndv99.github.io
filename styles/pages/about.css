@@ -1,5 +1,5 @@
 body{
-  /* picture of me looking over the Tay by the V&A, attempting to look cool and failing. */
+  /* picture of the waterfront at the V&A in Dundee cos it looks pretty cool and works for mobile nicely */
   background-image: url("about-background.JPG");
   /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
