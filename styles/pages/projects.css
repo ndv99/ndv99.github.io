@@ -1,6 +1,6 @@
 body{
-  /* placeholder image until I decide what I want */
-  background-image: url("https://picsum.photos/4000/4000");
+  /* picture of me looking over the Tay by the V&A, attempting to look cool and failing. */
+  background-image: url("projects-background.JPG");
   /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
 
@@ -9,4 +9,33 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.project-card{
+  margin: 0;
+  margin-left: 4%
+}
+
+#featured-projects{
+  margin-top: 15%;
+}
+
+/* This affects tablet and mobile. 1024px is used because at width: 1025px the screen is wide enough to show cards like in desktop arrangement, making these redundant (and possibly destructive) */
+@media screen and (max-width: 1024px) {
+  .project-card{
+    margin-right: 4%
+  }
+}
+
+/* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
+@media screen and (max-width: 767px) {
+
+  .project-card{
+    margin-top: 20px;s
+  }
+
+  #featured-projects{
+    margin-top: 0;
+    margin-bottom: 90px;
+  }
 }

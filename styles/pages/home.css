@@ -23,7 +23,7 @@ body{
 
 #bottom-cards{
   /* bottom cards don't touch bottom of page and aren't hidden by footer. */
-  margin-bottom: 77px
+  margin-bottom: 90px
 }
 
 #card1, #card2{
@@ -45,8 +45,7 @@ body{
     margin-top: 5%;
   }
 
-  /* card5 "Cut to the chase" will avoid the footer; when you scroll to the bottom, card 5 moves up enough to not be covered by footer. */
-  #card5{
-    margin-bottom: 77px;
+  #card1, #card2{
+    margin-top: 5%;
   }
 }
