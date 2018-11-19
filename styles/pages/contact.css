@@ -10,3 +10,31 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.credit{
+  font-size: 10px;
+}
+
+.contact-card{
+  height: 250px;
+}
+
+.contact-details{
+  padding: 0;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#social{
+  margin: 0;
+  margin-top: 180px;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
+@media screen and (max-width: 767px) {
+
+  #social{
+    margin-top: 20px;s
+  }
