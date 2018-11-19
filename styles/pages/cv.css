@@ -10,3 +10,33 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+#pb1{
+  margin-top: 142px;
+}
+
+#pb5{
+  margin-bottom: 77px;
+}
+
+#pb2 > .pb-img, #pb4 > .pb-img{
+  float: right;
+}
+
+#contact-link{
+  text-decoration: underline;
+}
+
+#first-para{
+  font-size: 24px;
+}
+
+.parablock > ul{
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #pb1{
+    margin-top: 0;
+  }
+}

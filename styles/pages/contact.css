@@ -31,3 +31,10 @@ body{
   padding: 0;
   max-width: 100%;
 }
+
+/* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
+@media screen and (max-width: 767px) {
+
+  #social{
+    margin-top: 20px;s
+  }
