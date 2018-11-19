@@ -10,7 +10,7 @@ h2{
   font-size: 22px;
 }
 
-p, a, ul, ol, li, blockquote, small {
+p, a, ul, ol, li, blockquote, small, section {
   font-family: 'Fira Sans', sans-serif;
   color: var(--text-one);
 }

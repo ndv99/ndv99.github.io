@@ -10,3 +10,20 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.credit{
+  font-size: 10px;
+}
+
+#social{
+  margin: 0;
+  margin-top: 180px;
+  padding: 0;
+  max-width: 100%;
+}
+
+#social-links{
+  padding: 0;
+  list-style-type: none;
+  font-size: 20px;
+}
