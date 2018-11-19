@@ -27,7 +27,7 @@ body{
   text-decoration: underline;
 }
 
-#first-para{
+#first-para, #third-para, #fourth-para, #fifth-para{
   font-size: 24px;
 }
 
