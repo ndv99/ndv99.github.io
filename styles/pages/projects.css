@@ -6,18 +6,19 @@ body{
 
   /* positioning: top edge of image touches top edge of page, image covers background, image does not repeat, image does not move on scrolling */
   background-position: center top;
-  background-size: cover;
+  background-size: cover, contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .project-card{
   margin: 0;
-  margin-left: 4%
+  margin-left: 4%;
+  margin-bottom: 40px;
 }
 
 #featured-projects{
-  margin-top: 15%;
+  margin-top: 280px;
 }
 
 /* Since you're reading the CSS, I'm gonna help you out. There is a ihidden link
@@ -32,6 +33,11 @@ next to the title of the first card in the projects page. DO NOT CLICK IT. */
   .project-card{
     margin-right: 4%
   }
+
+  #featured-projects{
+    margin-top: 180px;
+    margin-bottom: 90px;
+  }
 }
 
 /* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
@@ -43,6 +49,5 @@ next to the title of the first card in the projects page. DO NOT CLICK IT. */
 
   #featured-projects{
     margin-top: 0;
-    margin-bottom: 90px;
   }
 }

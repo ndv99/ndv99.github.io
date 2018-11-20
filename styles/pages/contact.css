@@ -1,6 +1,6 @@
 body{
   /* placeholder image until I decide what I want */
-  background-image: url("https://picsum.photos/4000/4000");
+  background-image: url("contact-background.JPG");
   /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
 
@@ -38,3 +38,9 @@ body{
   #social{
     margin-top: 20px;s
   }
+
+  #direct{
+    margin-bottom: 90px;
+  }
+
+}
