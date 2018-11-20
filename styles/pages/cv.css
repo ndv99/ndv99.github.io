@@ -1,6 +1,6 @@
 body{
-  /* placeholder image until I decide what I want */
-  background-image: url("https://picsum.photos/4000/4000");
+  /* a picture of a plane in the air, seconds after taking off from Luton airport. */
+  background-image: url("cv-background.JPG");
   /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
 
