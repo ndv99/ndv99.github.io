@@ -7,16 +7,18 @@ structure, until I coined 'parablock' - a paragraph in a neat little block. It's
   min-height: 300px;
   max-width: 100%;
   background-color: var(--mono-light-SEMI);
-  opacity: 50%;
+  opacity: 50%; /* semi transparent */
   display: block;
 }
 
+/* image floats to the left of text by default and is 300x300 */
 .pb-img{
   float: left;
   height: 300px;
   width: 300px;
 }
 
+/* for text and heading, the look is similar to the cards. */
 .pb-text{
   color: var(--text-one);
 }
@@ -26,6 +28,7 @@ structure, until I coined 'parablock' - a paragraph in a neat little block. It's
   background-color: var(--mono-dark-SEMI);
 }
 
+/* shrinks image on mobile for better readability of text */
 @media screen and (max-width: 767px) {
   .pb-img{
     height: 200px;

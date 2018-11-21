@@ -11,31 +11,39 @@ body{
   background-attachment: fixed;
 }
 
+/* top parablock avoids header */
 #pb1{
   margin-top: 142px;
 }
 
+/* bottom parablock avoids footer */
 #pb5{
   margin-bottom: 77px;
 }
 
+/* images in 2nd and fourth parablock float to right so image location alternates in page */
 #pb2 > .pb-img, #pb4 > .pb-img{
   float: right;
 }
 
+/* contact link is clearly a link */
 #contact-link{
   text-decoration: underline;
 }
 
+/* first, third, fourth, and fifth parablocks have larger fonts. */
 #first-para, #third-para, #fourth-para, #fifth-para{
   font-size: 24px;
 }
 
+/* no bottom margin in list in second parablock */
 .parablock > ul{
   margin-bottom: 0;
 }
 
+/* mobile stuff (767 is where unsemantic draws the line between mobile and desktop/tablet) */
 @media screen and (max-width: 767px) {
+  /* gets rid of top margin on top parablock on mobile */
   #pb1{
     margin-top: 0;
   }

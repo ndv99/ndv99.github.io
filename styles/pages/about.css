@@ -11,18 +11,22 @@ body{
   background-attachment: fixed;
 }
 
+/* top of content isn't hidden by the header when scrolled to the top of the page. */
 #top-pb{
   margin-top: 142px;
 }
 
+/* bottom of content isn't hidden by the footer when scrolled to the bottom of the page. */
 #bot-pb{
   margin-bottom: 77px;
 }
 
+/* image in middle parablock is on the right for some contrast with the top and bottom ones */
 #mid-pb > .pb-img{
   float: right;
 }
 
+/* margin is shrinked on mobile because of the way the menu works */
 @media screen and (max-width: 767px) {
   #top-pb{
     margin-top: 0;

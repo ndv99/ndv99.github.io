@@ -11,17 +11,19 @@ body{
   background-attachment: fixed;
 }
 
+/* each card is evenly spaced */
 .project-card{
   margin: 0;
   margin-left: 4%;
   margin-bottom: 40px;
 }
 
+/* grid container avoids header */
 #featured-projects{
   margin-top: 280px;
 }
 
-/* Since you're reading the CSS, I'm gonna help you out. There is a ihidden link
+/* Since you're reading the CSS, I'm gonna help you out. There is a hidden link
 next to the title of the first card in the projects page. DO NOT CLICK IT. */
 #secret{
   color: var(--mono-dark);
@@ -30,10 +32,12 @@ next to the title of the first card in the projects page. DO NOT CLICK IT. */
 
 /* This affects tablet and mobile. 1024px is used because at width: 1025px the screen is wide enough to show cards like in desktop arrangement, making these redundant (and possibly destructive) */
 @media screen and (max-width: 1024px) {
+  /* adds right margin so cards are centered */
   .project-card{
     margin-right: 4%
   }
 
+  /* has a set top margin since menu is still like desktop menu */
   #featured-projects{
     margin-top: 180px;
     margin-bottom: 90px;
@@ -43,10 +47,12 @@ next to the title of the first card in the projects page. DO NOT CLICK IT. */
 /* mobile stuff. width is 767 because that is where unsemantic draws the line between tablet and phone. */
 @media screen and (max-width: 767px) {
 
+  /* top margin is shrunk for mobile */
   .project-card{
-    margin-top: 20px;s
+    margin-top: 20px;
   }
 
+  /* same here */
   #featured-projects{
     margin-top: 0;
   }
