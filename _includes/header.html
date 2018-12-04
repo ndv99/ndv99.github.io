@@ -1,54 +1,46 @@
 <!-- Page header -->
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <!-- DESKTOP/TABLET HEADER -->
-    <header class="hide-on-mobile" id="header-and-menu">
+<!-- DESKTOP/TABLET HEADER -->
+<header class="hide-on-mobile" id="header-and-menu">
 
-      <!-- title bar -->
-      <div class="grid-container header">
-        <h1 class="title">Nick De Villiers</h1>
-      </div>
+  <!-- title bar -->
+  <div class="grid-container header">
+    <h1 class="title">Nick De Villiers</h1>
+  </div>
 
-      <!-- menu bar -->
-      <nav class="grid-container menu">
-        <!-- Using a list and a loop to dynamically generate the menu bar -->
-        {% assign pages = site.pages | sort: "order" %}
-        {% for item in pages %}
-          {% if item.type == "display" %}
-            <section class="grid-10 tablet-grid-15 {% if page.url == item.url %} active {% endif %} menu-box" id="{{item.css}}">
-              <a class='menu-item {% if page.url == item.url %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
-            </section>
-          {% endif %}
-        {% endfor %}
-      </nav>
+  <!-- menu bar -->
+  <nav class="grid-container menu">
+    <!-- Using a list and a loop to dynamically generate the menu bar -->
+    {% assign pages = site.pages | sort: "order" %}
+    {% for item in pages %}
+      {% if item.type == "display" %}
+        <section class="grid-10 tablet-grid-15 {% if page.url == item.url %} active {% endif %} menu-box" id="{{item.css}}">
+          <a class='menu-item {% if page.url == item.url %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
+        </section>
+      {% endif %}
+    {% endfor %}
+  </nav>
 
-    </header>
+</header>
 
-    <!-- code for mobile menu partially from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
-    <!-- MOBILE HEADER -->
-    <header class="hide-on-desktop hide-on-tablet" id="mobile-header">
+<!-- code for mobile menu partially from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+<!-- MOBILE HEADER -->
+<header class="hide-on-desktop hide-on-tablet" id="mobile-header">
 
-      <!-- title bar -->
-      <div class="header mobile-title-bar">
-        <h1 class="title">
-          NDV
-        </h1>
-      </div>
+  <!-- title bar -->
+  <div class="header mobile-title-bar">
+    <h1 class="title">
+      NDV
+    </h1>
+  </div>
 
-      <nav class="grid-container menu">
-        <!-- Using a list and a loop to dynamically generate the menu bar -->
-        {% assign pages = site.pages | sort: "order" %}
-        {% for item in pages %}
-          {% if item.type == "display" %}
-            <a class='menu-item {% if page.url == item.url %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
-          {% endif %}
-        {% endfor %}
-      </nav>
+  <nav class="grid-container menu">
+    <!-- Using a list and a loop to dynamically generate the menu bar -->
+    {% assign pages = site.pages | sort: "order" %}
+    {% for item in pages %}
+      {% if item.type == "display" %}
+        <a class='menu-item {% if page.url == item.url %} active {% endif %}' href="{{item.url}}">{{item.title}}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
 
-    </header>
-  </body>
-</html>
+</header>
