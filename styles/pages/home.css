@@ -1,6 +1,6 @@
 body{
-  /* kinda edgy background image of me that I wanted to change but everyone said to keep cos it looks cool so I guess I will */
-/*   background-image: url("home-background.JPG"); */
+  /* image of me and my band playing a gig at Church, Dundee */
+  background-image: url("home-background.JPG");
   /* fallback colour in case image fails to load */
   background-color: var(--bg-colour);
 
